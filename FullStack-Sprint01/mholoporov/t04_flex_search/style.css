@@ -1,0 +1,45 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    margin-top: 20px;
+}
+
+
+input[type="text"] {
+    flex-grow: 1;
+    height: 2em;
+    padding: 0 10px;
+    color: #008000;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input[type="text"]:hover {
+    color: red;
+}
+
+button {
+    height: 2em;
+    padding: 0 10px;
+    color: rgb(70, 69, 69);
+    border: none;
+    cursor: pointer;
+    background-color: #979797;
+}
+
+button:hover {
+    color: red;
+}
+
+::placeholder {
+    color: green;
+}

@@ -1,0 +1,14 @@
+{
+    "name": "avenger-quotes",
+    "version": "1.0.0",
+    "description": "Avenger Quotes XML Conversion",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "express": "^4.19.2",
+        "fs-extra": "^10.0.0",
+        "xml2js": "^0.4.23"
+    }
+}

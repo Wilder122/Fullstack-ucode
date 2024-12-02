@@ -1,0 +1,13 @@
+.gauntlet {
+    width: 100%;
+}
+
+.man {
+    width: 30%;
+    margin: 50px;
+}
+
+  .hand:hover ~ table tbody tr:nth-child(odd) td:nth-child(odd),
+  .hand:hover ~ table tbody tr:nth-child(even) td:nth-child(even) {
+    opacity: 0%;
+  }  

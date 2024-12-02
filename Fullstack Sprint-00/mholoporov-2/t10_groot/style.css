@@ -1,0 +1,41 @@
+body {
+  margin: 30px;
+  position: relative;
+}
+
+h1 {
+    margin-left: -4px;
+    margin-bottom: 50px;
+  }
+
+.box {
+  background-color: lightgray;
+  padding: 20px;
+  position: absolute;
+  left: 25px;
+  right: 25px;
+}
+
+.box::before {
+  content: "";
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -30px;
+  height: 117px;
+}
+
+.box::after {
+  content: "";
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -30px;
+  width: calc(100% + 60px);
+}
+
+  

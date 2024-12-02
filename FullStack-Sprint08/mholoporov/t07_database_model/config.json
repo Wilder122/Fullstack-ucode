@@ -1,0 +1,10 @@
+{
+    "host": "localhost",
+    "user": "golop",
+    "password": "securepass",
+    "database": "ucode_web",
+    "waitForConnections": true,
+    "connectionLimit": 10,
+    "queueLimit": 0
+  }
+  

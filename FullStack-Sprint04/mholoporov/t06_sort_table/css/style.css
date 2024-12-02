@@ -1,0 +1,61 @@
+body {
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table {
+    border: 3px solid #333;
+    margin: 0 auto;
+}
+
+th {
+    width: 50px;
+    padding: 12px 18px;
+    background: rgb(255, 4, 50) !important;
+    transition: background-color 0.2s ease;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+th:hover {
+    background-color: rgba(255, 29, 70, 0.4) !important;
+    box-shadow: 0 0 0 2px rgb(255, 29, 70);
+}
+
+tr {
+    background: rgba(181, 181, 181, 0.2);
+}
+
+td {
+    text-align: center;
+    width: 50px;
+    padding: 12px 18px;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#notification {
+    border-radius: 25px;
+    background-color: rgba(181, 181, 181, 0.6);
+    border: solid 3px rgba(181, 181, 181, 0.2);
+    width: 280px;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    transition: background-color 0.2s ease;
+}
+
+#notification:hover {
+    background-color: rgb(255, 29, 70);
+}

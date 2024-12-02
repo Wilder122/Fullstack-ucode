@@ -1,0 +1,204 @@
+/* Reset styles */
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Стили для шапки */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(144, 41, 36);
+}
+
+.logo h1 {
+    color: #fff;
+    margin-left: 10px; /* Подстройка, если необходимо */
+}
+
+.contact-info p {
+    color: #fff;
+    margin-right: 10px; /* Подстройка, если необходимо */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 17px;
+    font-size: 16px;
+}
+
+/* Стили для ввода текста */
+header input[type="text"] {
+    appearance: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(214, 213, 201);
+    width: 180px;
+    margin-left: 20px; /* Подстройка, если необходимо */
+    color: #fff;
+}
+
+header input[type="text"]:focus {
+    color: #212529;
+    border-color: #bdbdbd;
+    outline: 0;
+}
+
+/* Стили для подзаголовка */
+.under_head {
+    background-color: rgb(223, 210, 192);
+    padding: 10px 20px;
+}
+
+.under_head a {
+    color: black; /* Цвет по умолчанию */
+}
+
+.under_head a.active {
+    color: red; /* Красный цвет для активной ссылки */
+}
+
+.under_head a.active ~ a {
+    color: red; /* Красный цвет для всех предшествующих ссылок */
+}
+
+/* Стили для раздела с фильтрами */
+.filters {
+    grid-area: filters; /* Присваивание области сетки для позиционирования */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Стили для раздела с продуктами */
+.products {
+    grid-area: products; /* Присваивание области сетки для позиционирования */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Стили для продукта */
+.product {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    margin-bottom: 5px;
+}
+
+.product .price {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.product .availability {
+    color: green;
+    margin-bottom: 5px;
+}
+
+.notavailability {
+    color: rgb(128, 0, 0);
+    margin-bottom: 5px;
+}
+
+.product .buy-btn {
+    background-color: #cf0909;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product .buy-btn:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.product .buy-btn:hover {
+    background-color: #45a049;
+}
+
+/* Стили для подвала */
+footer {
+    background-color: rgb(144, 41, 36);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Адаптивные стили */
+@media screen and (max-width: 767px) {
+    /* Мобильные стили */
+    .filters, .products {
+        grid-template-columns: 1fr;
+    }
+
+    .filters, .products {
+        padding: 10px;
+    }
+}
+
+/* Дополнительные стили для перемещения "Category" и "Price Range" влево */
+.filter-option:nth-child(1), /* Выбор первой опции фильтра */
+.filter-option:nth-child(2) { /* Выбор второй опции фильтра */
+    grid-area: filters; /* Перемещение опций фильтра влево */
+}
+
+/* Стили для чекбоксов и меток */
+input[type="checkbox"] {
+    display: none; /* Скрытие стандартных чекбоксов */
+}
+
+/* Стили для меток */
+label {
+    display: inline-block;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Изменение цвета фона меток при выборе */
+input[type="checkbox"]:checked + label {
+    background-color: rgb(119, 119, 72); /* Бежевый цвет для выбранных меток */
+}

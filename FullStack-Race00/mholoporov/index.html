@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator with History</title>
+    <h1>Calculator</h1>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="calculator">
+    <div class="calculation-history"></div> <!-- Added history display -->
+    <input type="text" class="calculator-screen" value="0" disabled />
+    <div class="calculator-keys">
+        <button class="button" onclick="calculator.clear()">C</button>
+        <button class="button" onclick="calculator.toggleSign()">+/-</button>
+        <button class="button" onclick="calculator.percent()">%</button><button class="button" onclick="calculator.factorial()">x!</button>
+        <button class="button" onclick="calculator.exponentiate(2)">X<sup>n</sup></button>
+        <button class="button" onclick="calculator.squareRoot()">√</button><br>
+        <button class="button operator" onclick="calculator.setOperation('÷')">÷</button>
+        <button class="button" onclick="calculator.appendNumber('7')">7</button>
+        <button class="button" onclick="calculator.appendNumber('8')">8</button>
+        <button class="button" onclick="calculator.appendNumber('9')">9</button>
+        <button class="button operator" onclick="calculator.setOperation('*')">*</button>
+        <button class="button" onclick="calculator.appendNumber('4')">4</button>
+        <button class="button" onclick="calculator.appendNumber('5')">5</button>
+        <button class="button" onclick="calculator.appendNumber('6')">6</button>
+        <button class="button operator" onclick="calculator.setOperation('+')">+</button>
+        <button class="button" onclick="calculator.appendNumber('1')">1</button>
+        <button class="button" onclick="calculator.appendNumber('2')">2</button>
+        <button class="button" onclick="calculator.appendNumber('3')">3</button>
+        <button class="button operator" onclick="calculator.setOperation('-')">-</button>
+        <button class="button double" onclick="calculator.appendNumber('0')">0</button>
+        <button class="button" onclick="calculator.appendNumber('.')">.</button>
+        <button class="button equals" onclick="calculator.compute()">=</button>
+
+    </div>
+</div>
+<script src="./js/script.js"></script>
+</body>
+</html>

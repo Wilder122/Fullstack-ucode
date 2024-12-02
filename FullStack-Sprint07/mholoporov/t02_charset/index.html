@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charset Conversion</title>
+</head>
+<body>
+    <h1>Charset</h1>
+    <form id="charsetForm">
+        <p>
+            <label for="inputString">Change charset:</label>
+            <input type="text" id="inputString" name="inputString" placeholder="Input string">
+        </p>
+        <p>
+            <label for="charsets">Select charset or several charsets:</label>
+            <select id="charsets" name="charsets" multiple>
+                <option value="utf-8">UTF-8</option>
+                <option value="iso-8859-1">ISO-8859-1</option>
+                <option value="windows-1252">Windows-1252</option>
+            </select>
+        </p>
+        <p>
+            <button type="button" id="convertBtn">Change charset</button>
+            <button type="reset" id="clearBtn">Clear</button>
+        </p>
+    </form>
+    <div id="results"></div>
+    <script src="index.js"></script>
+</body>
+</html>

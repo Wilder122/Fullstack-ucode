@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Make square image</h1>
+
+    <input id="url" type="text" name="url" placeholder="Image url..."><br><br>
+
+    <input type="submit" id="submit" value="GO"><br><br>
+
+    <div class="image-container" id="imageContainer">
+
+    </div>
+
+    <script>
+        document.getElementById('submit').onclick = function() {
+            const src = document.getElementById('url').value;
+            const container = document.getElementById('imageContainer');
+            container.innerHTML = '';
+
+            const filters = ['', 'hue-rotate(0deg) saturate(100%) sepia(100%) hue-rotate(90deg)', 'hue-rotate(0deg) saturate(100%) sepia(100%) hue-rotate(180deg)', 'hue-rotate(0deg) saturate(100%) sepia(100%) hue-rotate(270deg)'];
+            filters.forEach(filter => {
+                const img = document.createElement('img');
+                img.style.width = "200px";
+                img.style.height = "200px";
+                img.src = src;
+                img.style.filter = filter;
+                container.appendChild(img);
+            });
+        }
+    </script>
+</body>
+</html>

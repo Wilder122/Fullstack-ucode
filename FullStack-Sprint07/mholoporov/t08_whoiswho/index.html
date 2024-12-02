@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Reader</title>
+</head>
+<body>
+    <h1>Parsing CSV data</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <label for="file">Upload file:</label>
+        <input type="file" id="file" name="file">
+        <button type="submit">Upload</button>
+    </form>
+    <div>
+        <label for="column">Column:</label>
+        <select id="column"></select>
+        
+        <label for="value">Value:</label>
+        <input type="text" id="value">
+        
+        <button id="filter">Filter</button>
+    </div>
+    <hr>
+    <table id="csvTable" border="1">
+        <thead>
+            <tr id="headerRow"></tr>
+        </thead>
+        <tbody id="dataRows"></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

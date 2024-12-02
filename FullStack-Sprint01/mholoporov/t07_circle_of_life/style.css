@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+}
+
+.circle-container {
+    width: fit-content;
+    margin-left: 0px;
+    margin-right: 150px;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(0, 129, 0);
+    border-radius: 100%;
+    background-color: rgb(117, 240, 117);
+    display: block;
+    animation: shake 2s alternate infinite;
+}
+
+.circle:hover {
+    background-color: rgb(196, 16, 16);
+}
+
+@keyframes shake {
+    100% {
+        transform: translate(calc(100vw - 150px));  
+    }
+}

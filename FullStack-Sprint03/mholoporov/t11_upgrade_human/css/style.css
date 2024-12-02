@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  #container {
+    margin: 50px auto;
+    max-width: 500px;
+  }
+  
+  #human-image {
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  #human-info {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }

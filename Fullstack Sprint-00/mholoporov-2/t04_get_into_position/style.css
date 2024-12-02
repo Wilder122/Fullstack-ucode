@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f8ff;
+  }
+  
+  h1 {
+    width: 99%;
+    background-color: red;
+    margin: 0;
+  }
+  
+  span {
+    display: inline-block;
+    width: 50%;
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    bottom: -29px;
+  }

@@ -1,0 +1,67 @@
+body {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 30px;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th, td {
+    border: 3px solid rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 0px solid rgb(255, 255, 255);
+}
+
+tfoot td {
+    background-color: #e8e8e8;
+    text-align: center;
+    font-style: italic;
+}
+
+a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#soul {
+    background-color: #ff9100;
+}
+
+#time {
+    background-color: #377d21;
+}
+
+#space {
+    background-color: #22578e;
+}
+
+#mind {
+    background-color: #fffd55;
+}
+
+#reality {
+    background-color: #b23834;
+}
+
+#power {
+    background-color: #8077b2;
+}
+

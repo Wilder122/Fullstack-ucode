@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avenger Quotes</title>
+</head>
+<body>
+    <h1>Original Avenger Quotes</h1>
+    <div id="originalQuotesContent"></div>
+    <h1>Avenger Quotes from XML</h1>
+    <div id="xmlQuotesContent"></div>
+    <script>
+        const fetchQuotes = async (url, elementId) => {
+            const response = await fetch(url);
+            const quotes = await response.json();
+            const element = document.getElementById(elementId);
+            element.innerHTML = quotes.map(q => `
+                <div>
+                    <h3>${q.author}</h3>
+                    <p>${q.quote}</p>
+                    <p><strong>Publish Date:</strong> ${q.publishDate}</p>
+                    <p><strong>Photos:</strong> ${q.photo.join(', ')}</p>
+                    <p><strong>Comments:</strong></p>
+                    <ul>
+                        ${Object.entries(q.comments).map(([date, comment]) => `<li>${date}: ${comment}</li>`).join('')}
+                    </ul>
+                </div>
+            `).join('');
+        };
+
+        fetchQuotes('/original-quotes', 'originalQuotesContent');
+        fetchQuotes('/xml-quotes', 'xmlQuotesContent');
+    </script>
+</body>
+</html>

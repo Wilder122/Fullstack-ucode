@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

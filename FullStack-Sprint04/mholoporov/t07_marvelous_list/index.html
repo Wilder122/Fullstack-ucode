@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Showcase</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Marvelous list</h1>
+    <div class="container">
+        <div class="movie-list">
+            <div class="movie-item" onclick="showMovieDetails('venom')">Venom</div>
+            <div class="movie-item" onclick="showMovieDetails('spiderman')">Spider-Man: Far from Home</div>
+            <div class="movie-item" onclick="showMovieDetails('doctorstrange')">Doctor Strange in the Multiverse of Madness</div>
+        </div>
+        <div class="movie-details">
+            <div id="movie-info">
+                <h2 id="movie-title">Venom</h2>
+                <small id="movie-date">October 5, 2018</small>
+                <br>
+                <div class="actor-list">
+                    <span class="actor-item" id="actor1">Tom Hardy</span>
+                    <span class="actor-item" id="actor2">Michelle Williams</span>
+                    <span class="actor-item" id="actor3">Riz Ahmed</span>
+                </div>
+                <br>
+                <p id="movie-description">
+                    "Venom" is a sci-fi action film where journalist Eddie Brock bonds with the symbiotic creature Venom, an alien from a planet of symbiotes. Together, they battle a sinister corporate magnate who seeks to exploit the symbiote for his own purposes. Throughout their adventure, Brock and Venom discover new powers and abilities, confront dangerous foes, and resolve issues within their symbiotic union. The film explores themes of betrayal, self-identity, and the strength of inner partnership. Ultimately, Brock and Venom realize that their symbiotic bond becomes not only a source of strength but also an unexpected source of connection and friendship.
+                </p>
+            </div>
+            <div id="movie-poster">
+                <img id="poster-image" src="assets/images/venom.png" alt="Movie Poster">
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

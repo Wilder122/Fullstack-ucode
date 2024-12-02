@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Note Manager</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Notes with cookies</h1>
+    <div class="container">
+		<div class="input-section">
+            <label for="inputText"></label>
+            <textarea id="inputText" rows="10" maxlength="500" placeholder="Enter your text here..."></textarea>
+        </div>
+        <div class="control-buttons">
+            <button onclick="saveToCookies()">Save to Cookie</button>
+            <button onclick="eraseCookies()">Clear to Cookie</button>
+        </div>
+        <div class="note-archive">
+            <label>Archived Notes:</label>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

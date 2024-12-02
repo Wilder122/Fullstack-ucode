@@ -1,0 +1,8 @@
+{
+    "db": {
+      "host": "localhost",
+      "user": "root",
+      "password": "645864",
+      "database": "ucode_web"
+    }
+  }

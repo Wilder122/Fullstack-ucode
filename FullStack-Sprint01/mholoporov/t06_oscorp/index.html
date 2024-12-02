@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOCU Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>HOCU</h1>
+        </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+            <input type="text"  placeholder="Search">
+        </nav>
+        <div class="contact-info">
+    <p>Phone: +1 (800) 333-1234</p>
+    </header>
+
+        <div class="under_head">
+            <a href="#">Home</a>
+            <span>/</span>
+            <a href="#">Catalog</a>
+        </div>
+
+        <section class="filters">
+            <h2>Filters</h2>
+            <div class="filter-option">
+                <h3>Category</h3>
+                <input type="checkbox" id="tshirts">
+                <label for="tshirts">T-Shirts</label>
+        
+                <input type="checkbox" id="hoodies">
+                <label for="hoodies">Hoodies</label>
+        
+                <input type="checkbox" id="shorts">
+                <label for="shorts">Shorts</label>
+            </div>
+            <div class="filter-option">
+                <h3>Price</h3>
+                <input type="range" min="0" max="1000" value="50" id="price-range">
+                <output for="price-range" id="price-value"></output>
+            </div>
+        </section>
+
+    <section class="products">
+        <div class="product">
+            <td><img src="assets/images/gojo.png"  alt="gojo"></td>
+            <h3>Satoru Gojo</h3>
+            <p class="price">$24.99</p>
+            <p class="availability">In Stock</p>
+            <button class="buy-btn" onclick="window.location.href='card.html'">Buy</button>
+        </div>
+        <div class="product">
+            <td><img src="assets/images/sukuna.png"  alt="sukuna"></td>
+            <h3>Ryomen Sukuna</h3>
+            <p class="price">$24.99</p>
+            <p class="notavailability">Not Available</p>
+            <button class="buy-btn" disabled>Buy</button>
+        </div>
+        <div class="product">
+            <td><img src="assets/images/todzi.png"  alt="todzi"></td>
+            <h3>Toji Fushiguro</h3>
+            <p class="price">$24.99</p>
+            <p class="notavailability">Not Available</p>
+            <button class="buy-btn" disabled>Buy</button>
+        </div>
+        <div class="product">
+            <td><img src="assets/images/inumaki.png"  alt="inumaki"></td>
+            <h3>Toge Inumaki</h3>
+            <p class="price">$24.99</p>
+            <p class="availability">In Stock</p>
+            <button class="buy-btn">Buy</button>
+        </div>
+        <!-- More products go here -->
+    </section>
+    
+    <footer>
+        <table style="width: 100%;">
+            <tr>
+                <td align="left">HOCU Store &copy; 2024 | All rights reserved.</td>
+                <td align="right">Terms of Service | Privacy Police</td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
+</html>
